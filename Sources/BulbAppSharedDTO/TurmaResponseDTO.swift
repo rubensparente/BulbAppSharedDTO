@@ -13,13 +13,15 @@ public struct TurmaResponseDTO: Codable{
     public let nome: String
     public let dataInicio: Date?
     public let dataFinal: Date?
+    public let codigoTurma: Int
     public let listaAlunos: [String]
     
-    public init(id: UUID, nome: String, dataInicio: Date?, dataFinal: Date?, listaAlunos: [String]) {
-        self.id = id
+    
+    public init(nome: String, dataInicio: Date?, dataFinal: Date?, codigoTurma: Int, listaAlunos: [String]) {
         self.nome = nome
         self.dataInicio = dataInicio
         self.dataFinal = dataFinal
+        self.codigoTurma = codigoTurma
         self.listaAlunos = listaAlunos
     }
 }
