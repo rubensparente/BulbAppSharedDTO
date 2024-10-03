@@ -12,7 +12,7 @@ public struct TurmaRequestDTO: Codable{
     public let nome: String
     public let dataInicio: Date?
     public let dataFinal: Date?
-    public let codigoTurma: Int
+    //public let codigoTurma: Int
     public let listaAlunos: [String]
     
     
