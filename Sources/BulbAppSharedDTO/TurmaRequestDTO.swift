@@ -16,11 +16,11 @@ public struct TurmaRequestDTO: Codable{
     public let listaAlunos: [String]
     
     
-    public init(nome: String, dataInicio: Date?, dataFinal: Date?, codigoTurma: Int, listaAlunos: [String]) {
+    public init(nome: String, dataInicio: Date?, dataFinal: Date?, /*codigoTurma: Int,*/ listaAlunos: [String]) {
         self.nome = nome
         self.dataInicio = dataInicio
         self.dataFinal = dataFinal
-        self.codigoTurma = codigoTurma
+       // self.codigoTurma = codigoTurma
         self.listaAlunos = listaAlunos
     }
 }
